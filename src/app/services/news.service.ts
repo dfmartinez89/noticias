@@ -16,7 +16,7 @@ export class NewsService {
   getTopHeadLines(): Observable<Article[]> {
     return this.http
       .get<NewsResponse>(
-        `https://newsapi.org/v2/top-headlines?country=us&category=business`,
+        `https://newsapi.org/v2/top-headlines?country=us&category=sports`,
         {
           params: {
             apiKey,
